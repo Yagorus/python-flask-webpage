@@ -8,9 +8,9 @@ image_tag           = "0.0.1"
 app_count           = 1
 working_dir         = "../../../../../../../app/" 
 
-github_path_url     = "https://gitlab.com/Yagorus/python-flask-webpage/"
+github_path_url     = "https://github.com/Yagorus/python-flask-webpage"
 git_trigger        = "PUSH"
-git_pattern_branch  = "^refs/heads/terraform$"
+git_pattern_branch  = "^refs/heads/main$"
 buildspec_path      = "providers/dev"
 buildspec_file      = "buildspec.yml"
 
