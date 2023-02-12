@@ -8,7 +8,9 @@ variable "github_path_url" {}   # 1
 variable "git_trigger" { }      # 1
 variable "git_pattern_branch" {} #1
 variable "token_git" {  }       # 1
-variable "public_subnets" {}
+variable "public_subnets" {
+  type        = list(string)
+}
 variable "vpc_id" {}
 
 
