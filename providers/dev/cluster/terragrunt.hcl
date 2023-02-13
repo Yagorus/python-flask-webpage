@@ -23,6 +23,7 @@ dependency "network" {
     mock_outputs = {
       aws_lb_target_group_arn = "arn:aws:elasticloadbalancing:eu-central-1:264716044050:targetgroup/ecs-flaska-flask-app-service/cb9ea27e466ec8bb"
       public_subnets = ["subnet-09a4eebc2c8bd80b2", "subnet-06a166845821cdda2"]
+      private_subnets = ["subnet-09a4eebc2c8bd80b2", "subnet-06a166845821cdda2"]
       security_group_id = "sg-0c7e26e48066dec1f"
       service_security_group = "sg-0c7226e48066dec1f"
     }
@@ -34,4 +35,5 @@ inputs = {
     security_group_id = dependency.network.outputs.security_group_id
     public_subnets = dependency.network.outputs.public_subnets
     service_security_group = dependency.network.outputs.service_security_group
+    private_subnets = dependency.network.outputs.private_subnets
 }

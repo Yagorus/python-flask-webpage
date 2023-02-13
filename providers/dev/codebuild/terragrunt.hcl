@@ -37,6 +37,7 @@ dependency "network" {
     mock_outputs = {
         vpc_id = "vpc-000000000000"
         public_subnets = ["subnet-222222222222", "subnet-333333333333"]
+        private_subnets = ["subnet-222222222222", "subnet-333333333333"]
   }
 }
 
@@ -45,5 +46,6 @@ dependency "network" {
     {
         vpc_id = dependency.network.outputs.vpc_id
         public_subnets = dependency.network.outputs.public_subnets
+        private_subnets = dependency.network.outputs.private_subnets
     }
   )

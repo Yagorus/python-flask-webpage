@@ -41,7 +41,7 @@ resource "aws_codebuild_project" "project" {
 
 vpc_config {
     vpc_id = var.vpc_id
-    subnets = var.public_subnets
+    subnets = var.private_subnets
     security_group_ids = [ aws_security_group.sg_codebuild.id ]
   }
 }

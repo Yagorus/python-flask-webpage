@@ -57,7 +57,7 @@ resource "aws_ecs_service" "flask_cluster_service" {
 
   network_configuration {
         security_groups = [var.security_group_id, var.service_security_group]
-        subnets = var.public_subnets[*]
+        subnets = var.private_subnets[*]
         assign_public_ip = true
     }
   load_balancer {

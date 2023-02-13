@@ -10,6 +10,9 @@ variable "aws_lb_target_group_arn" { }
 variable "public_subnets" { 
   type = set(string)
 }
+variable "private_subnets" { 
+  type = set(string)
+}
 variable "security_group_id" { }
 variable "service_security_group" { }
 
