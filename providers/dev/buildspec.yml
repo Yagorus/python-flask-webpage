@@ -5,7 +5,7 @@ env:
     CI: "true"
     REPOSITORY_REGION: "eu-central-1"
     ENV: "dev"
-    APP_NAME: "app"
+    APP_NAME: "flaskapp"
     NAME_CONTAINER: "main"
     TERRAFORM_VERSION: "1.1.4"
     TERRAGRUNT_VERSION: "0.36.1"
