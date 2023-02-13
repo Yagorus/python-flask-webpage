@@ -38,7 +38,8 @@ resource "aws_codebuild_project" "project" {
     git_clone_depth = 1
     report_build_status = "true"
   }
-
+# When you are assigning the CodeBuild project to a subnet, it must be a private subnet with a NAT gateway that is connected to the internet gateway.
+# https://stackoverflow.com/questions/48522481/aws-codebuild-build-does-not-have-internet-connectivity-please-check-subnet-n
 vpc_config {
     vpc_id = var.vpc_id
     subnets = var.private_subnets

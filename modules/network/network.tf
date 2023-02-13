@@ -44,6 +44,7 @@ resource "aws_route_table_association" "routeTableAssociationPublicRoute" {
   route_table_id =aws_route_table.public[count.index].id
 }
 
+# https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
 resource "aws_subnet" "private" {
   count      =  var.az_count
   vpc_id     = aws_vpc.main.id
