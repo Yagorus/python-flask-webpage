@@ -5,7 +5,7 @@ aws_profile         = "default"
 aws_account         = "264716044050"
 aws_region          = "eu-central-1"
 image_tag           = "0.0.1"
-app_count           = 1
+app_count           = 2
 working_dir         = "../../../../../../../app/" 
 
 github_path_url     = "https://github.com/Yagorus/python-flask-webpage"
@@ -13,7 +13,6 @@ git_trigger        = "PUSH"
 git_pattern_branch  = "^refs/heads/main$"
 buildspec_path      = "providers/dev"
 buildspec_file      = "buildspec.yml"
-
 }
 
 inputs = {
