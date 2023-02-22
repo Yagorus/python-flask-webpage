@@ -49,7 +49,7 @@ resource "aws_ecs_service" "flask_cluster_service" {
   cluster = aws_ecs_cluster.aws_ecs_cluster.id
 
   task_definition = aws_ecs_task_definition.aws_ecs_task.id
-  desired_count = 1
+  desired_count = 2
   launch_type     = "FARGATE"
   scheduling_strategy  = "REPLICA"
   deployment_minimum_healthy_percent = "90"
