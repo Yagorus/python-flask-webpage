@@ -6,6 +6,7 @@ variable "app_name" {}
 variable "ecr_repository_url" {}
 variable "image_tag" {}
 variable "aws_lb_target_group_arn" { }
+variable "app_count" { }
 
 variable "public_subnets" { 
   type = set(string)

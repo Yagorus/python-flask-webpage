@@ -5,7 +5,7 @@ aws_profile         = "default"
 aws_account         = "264716044050"
 aws_region          = "eu-central-1"
 image_tag           = "0.0.1"
-app_count           = 2
+app_count           = 3
 working_dir         = "../../../../../../../app/" 
 
 github_path_url     = "https://github.com/Yagorus/python-flask-webpage"
